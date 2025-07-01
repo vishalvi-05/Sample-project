@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register – Tech Conference 2025</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section id="register">
+    <h2>Register for Tech Conference 2025</h2>
+    <form id="registrationForm">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email Address" required>
+      <button type="submit">Register</button>
+    </form>
+    <p id="responseMessage"></p>
+  </section>
+
+  <!-- ✅ Inline JavaScript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("registrationForm");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent form from reloading page
+
+        document.getElementById("responseMessage").textContent =
+          "Registration successful! Redirecting to homepage...";
+
+        // Redirect after 1.5 seconds
+        setTimeout(function () {
+          window.location.href = "index.html"; // ✅ Make sure index.html exists
+        }, 1500);
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: seagreen;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+.header {
+    background: blueviolet;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    margin-right: auto;
+    /* aligns logo to the left */
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #fca311;
+    /* accent color for "2025" */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #a8dadc;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #a8dadc;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #1d3557;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero a button {
+    padding: 10px 20px;
+    background-color: #1d3557;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero a button:hover {
+    background-color: rebeccapurple;
+}
+
+#register {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#register form {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+#register input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#register button {
+    padding: 10px;
+    background-color: #1d3557;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#register button:hover {
+    background-color: #457b9d;
+}
+
+section {
+    padding: 60px 20px;
+    background-color: burlywood;
+    margin-bottom: 10px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1d3557;
+}
+
+section p,
+section ul {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.schedule h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.schedule .day {
+    background-color: none;
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.schedule h3 {
+    color: #1d3557;
+    margin-bottom: 15px;
+}
+
+.schedule ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.schedule li {
+    margin: 10px 0;
+    font-size: 1.05rem;
+    color: #000;
+}
+
+/* Speaker Grid */
+.speaker-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.speaker {
+    background: burlywood;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.speaker img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Contact Info */
+#contact {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: peru;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1d3557;
+    font-size: 2rem;
+}
+
+.contact p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* ✅ This centers horizontally */
+    justify-content: center;
+    text-align: center;
+    /* ✅ This centers text inside the <p> tags */
+
+}
+
+.contact p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .speaker-grid {
+        flex-direction: column;
+    }
+}
